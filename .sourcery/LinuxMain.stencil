@@ -17,8 +17,8 @@ extension {{ type.name }} {
     {% for method in type.methods where method.parameters.count == 0 and method.shortName|hasPrefix:"test" %}    ("{{ method.shortName }}", {{ method.shortName }}){% if not forloop.last %},{% endif %}
     {% endfor %}]
 }
-{% endfor %}
 
+{% endfor %}
 XCTMain([
 {% for type in types.classes|based:"XCTestCase" %}    testCase({{ type.name }}.allTests){% if not forloop.last %},{% endif %}
 {% endfor %}])

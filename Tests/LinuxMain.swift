@@ -20,6 +20,7 @@ extension AttributesRuleTests {
         ("testAttributesWithAlwaysOnLineAbove", testAttributesWithAlwaysOnLineAbove)
     ]
 }
+
 extension ColonRuleTests {
     static var allTests: [(String, (ColonRuleTests) -> () throws -> Void)] = [
         ("testColonWithDefaultConfiguration", testColonWithDefaultConfiguration),
@@ -27,6 +28,7 @@ extension ColonRuleTests {
         ("testColonWithoutApplyToDictionaries", testColonWithoutApplyToDictionaries)
     ]
 }
+
 extension CommandTests {
     static var allTests: [(String, (CommandTests) -> () throws -> Void)] = [
         ("testNoCommandsInEmptyFile", testNoCommandsInEmptyFile),
@@ -46,6 +48,7 @@ extension CommandTests {
         ("testExpandNextCommand", testExpandNextCommand)
     ]
 }
+
 extension ConfigurationTests {
     static var allTests: [(String, (ConfigurationTests) -> () throws -> Void)] = [
         ("testInit", testInit),
@@ -73,6 +76,7 @@ extension ConfigurationTests {
         ("testDisabledRulesFromDeprecatedAlias", testDisabledRulesFromDeprecatedAlias)
     ]
 }
+
 extension CustomRulesTests {
     static var allTests: [(String, (CustomRulesTests) -> () throws -> Void)] = [
         ("testCustomRuleConfigurationSetsCorrectly", testCustomRuleConfigurationSetsCorrectly),
@@ -84,6 +88,7 @@ extension CustomRulesTests {
         ("testCustomRulesExcludedExcludesFile", testCustomRulesExcludedExcludesFile)
     ]
 }
+
 extension CyclomaticComplexityConfigurationTests {
     static var allTests: [(String, (CyclomaticComplexityConfigurationTests) -> () throws -> Void)] = [
         ("testCyclomaticComplexityConfigurationInitializerSetsLevels", testCyclomaticComplexityConfigurationInitializerSetsLevels),
@@ -93,6 +98,7 @@ extension CyclomaticComplexityConfigurationTests {
         ("testCyclomaticComplexityConfigurationCompares", testCyclomaticComplexityConfigurationCompares)
     ]
 }
+
 extension CyclomaticComplexityRuleTests {
     static var allTests: [(String, (CyclomaticComplexityRuleTests) -> () throws -> Void)] = [
         ("testCyclomaticComplexity", testCyclomaticComplexity),
@@ -100,11 +106,13 @@ extension CyclomaticComplexityRuleTests {
         ("testIgnoresCaseStatementsConfigurationDisabled", testIgnoresCaseStatementsConfigurationDisabled)
     ]
 }
+
 extension ExtendedNSStringTests {
     static var allTests: [(String, (ExtendedNSStringTests) -> () throws -> Void)] = [
         ("testLineAndCharacterForByteOffset_forContentsContainingMultibyteCharacters", testLineAndCharacterForByteOffset_forContentsContainingMultibyteCharacters)
     ]
 }
+
 extension FileHeaderRuleTests {
     static var allTests: [(String, (FileHeaderRuleTests) -> () throws -> Void)] = [
         ("testFileHeaderWithDefaultConfiguration", testFileHeaderWithDefaultConfiguration),
@@ -114,6 +122,7 @@ extension FileHeaderRuleTests {
         ("testFileHeaderWithForbiddenPattern", testFileHeaderWithForbiddenPattern)
     ]
 }
+
 extension FunctionBodyLengthRuleTests {
     static var allTests: [(String, (FunctionBodyLengthRuleTests) -> () throws -> Void)] = [
         ("testFunctionBodyLengths", testFunctionBodyLengths),
@@ -121,6 +130,7 @@ extension FunctionBodyLengthRuleTests {
         ("testFunctionBodyLengthsWithMultilineComments", testFunctionBodyLengthsWithMultilineComments)
     ]
 }
+
 extension GenericTypeNameRuleTests {
     static var allTests: [(String, (GenericTypeNameRuleTests) -> () throws -> Void)] = [
         ("testGenericTypeName", testGenericTypeName),
@@ -128,6 +138,7 @@ extension GenericTypeNameRuleTests {
         ("testGenericTypeNameWithIgnoreStartWithLowercase", testGenericTypeNameWithIgnoreStartWithLowercase)
     ]
 }
+
 extension IdentifierNameRuleTests {
     static var allTests: [(String, (IdentifierNameRuleTests) -> () throws -> Void)] = [
         ("testIdentifierName", testIdentifierName),
@@ -135,24 +146,28 @@ extension IdentifierNameRuleTests {
         ("testIdentifierNameWithIgnoreStartWithLowercase", testIdentifierNameWithIgnoreStartWithLowercase)
     ]
 }
+
 extension ImplicitlyUnwrappedOptionalConfigurationTests {
     static var allTests: [(String, (ImplicitlyUnwrappedOptionalConfigurationTests) -> () throws -> Void)] = [
         ("testImplicitlyUnwrappedOptionalConfigurationProperlyAppliesConfigurationFromDictionary", testImplicitlyUnwrappedOptionalConfigurationProperlyAppliesConfigurationFromDictionary),
         ("testImplicitlyUnwrappedOptionalConfigurationThrowsOnBadConfig", testImplicitlyUnwrappedOptionalConfigurationThrowsOnBadConfig)
     ]
 }
+
 extension ImplicitlyUnwrappedOptionalRuleTests {
     static var allTests: [(String, (ImplicitlyUnwrappedOptionalRuleTests) -> () throws -> Void)] = [
         ("testImplicitlyUnwrappedOptionalRuleDefaultConfiguration", testImplicitlyUnwrappedOptionalRuleDefaultConfiguration),
         ("testImplicitlyUnwrappedOptionalRuleWarnsOnOutletsInAllMode", testImplicitlyUnwrappedOptionalRuleWarnsOnOutletsInAllMode)
     ]
 }
+
 extension IntegrationTests {
     static var allTests: [(String, (IntegrationTests) -> () throws -> Void)] = [
         ("testSwiftLintLints", testSwiftLintLints),
         ("testSwiftLintAutoCorrects", testSwiftLintAutoCorrects)
     ]
 }
+
 extension LineLengthConfigurationTests {
     static var allTests: [(String, (LineLengthConfigurationTests) -> () throws -> Void)] = [
         ("testLineLengthConfigurationInitializerSetsLength", testLineLengthConfigurationInitializerSetsLength),
@@ -168,6 +183,7 @@ extension LineLengthConfigurationTests {
         ("testLineLengthConfigurationCompares", testLineLengthConfigurationCompares)
     ]
 }
+
 extension LineLengthRuleTests {
     static var allTests: [(String, (LineLengthRuleTests) -> () throws -> Void)] = [
         ("testLineLength", testLineLength),
@@ -176,6 +192,7 @@ extension LineLengthRuleTests {
         ("testLineLengthWithIgnoreURLsEnabled", testLineLengthWithIgnoreURLsEnabled)
     ]
 }
+
 extension LinterCacheTests {
     static var allTests: [(String, (LinterCacheTests) -> () throws -> Void)] = [
         ("testInitThrowsWhenUsingInvalidCacheFormat", testInitThrowsWhenUsingInvalidCacheFormat),
@@ -195,6 +212,7 @@ extension LinterCacheTests {
         ("testRuleConfigurationChangedOrAddedOrRemovedCausesAllFilesToBeReLinted", testRuleConfigurationChangedOrAddedOrRemovedCausesAllFilesToBeReLinted)
     ]
 }
+
 extension NumberSeparatorRuleTests {
     static var allTests: [(String, (NumberSeparatorRuleTests) -> () throws -> Void)] = [
         ("testNumberSeparatorWithDefaultConfiguration", testNumberSeparatorWithDefaultConfiguration),
@@ -202,6 +220,7 @@ extension NumberSeparatorRuleTests {
         ("testNumberSeparatorWithMinimumFractionLength", testNumberSeparatorWithMinimumFractionLength)
     ]
 }
+
 extension RegionTests {
     static var allTests: [(String, (RegionTests) -> () throws -> Void)] = [
         ("testNoRegionsInEmptyFile", testNoRegionsInEmptyFile),
@@ -212,6 +231,7 @@ extension RegionTests {
         ("testSeveralRegionsFromSeveralCommands", testSeveralRegionsFromSeveralCommands)
     ]
 }
+
 extension ReporterTests {
     static var allTests: [(String, (ReporterTests) -> () throws -> Void)] = [
         ("testReporterFromString", testReporterFromString),
@@ -224,6 +244,7 @@ extension ReporterTests {
         ("testHTMLReporter", testHTMLReporter)
     ]
 }
+
 extension RuleConfigurationsTests {
     static var allTests: [(String, (RuleConfigurationsTests) -> () throws -> Void)] = [
         ("testNameConfigurationSetsCorrectly", testNameConfigurationSetsCorrectly),
@@ -249,6 +270,7 @@ extension RuleConfigurationsTests {
         ("testOverridenSuperCallConfigurationFromDictionary", testOverridenSuperCallConfigurationFromDictionary)
     ]
 }
+
 extension RuleTests {
     static var allTests: [(String, (RuleTests) -> () throws -> Void)] = [
         ("testRuleIsEqualTo", testRuleIsEqualTo),
@@ -264,6 +286,7 @@ extension RuleTests {
         ("testDifferentSeverityLevelRulesNotEqual", testDifferentSeverityLevelRulesNotEqual)
     ]
 }
+
 extension RulesTests {
     static var allTests: [(String, (RulesTests) -> () throws -> Void)] = [
         ("testClassDelegateProtocol", testClassDelegateProtocol),
@@ -342,6 +365,7 @@ extension RulesTests {
         ("testWeakDelegate", testWeakDelegate)
     ]
 }
+
 extension SourceKitCrashTests {
     static var allTests: [(String, (SourceKitCrashTests) -> () throws -> Void)] = [
         ("testAssertHandlerIsNotCalledOnNormalFile", testAssertHandlerIsNotCalledOnNormalFile),
@@ -349,6 +373,7 @@ extension SourceKitCrashTests {
         ("testRulesWithFileThatCrashedSourceKitService", testRulesWithFileThatCrashedSourceKitService)
     ]
 }
+
 extension TodoRuleTests {
     static var allTests: [(String, (TodoRuleTests) -> () throws -> Void)] = [
         ("testTodo", testTodo),
@@ -356,12 +381,14 @@ extension TodoRuleTests {
         ("testFixMeMessage", testFixMeMessage)
     ]
 }
+
 extension TrailingCommaRuleTests {
     static var allTests: [(String, (TrailingCommaRuleTests) -> () throws -> Void)] = [
         ("testTrailingCommaRuleWithDefaultConfiguration", testTrailingCommaRuleWithDefaultConfiguration),
         ("testTrailingCommaRuleWithMandatoryComma", testTrailingCommaRuleWithMandatoryComma)
     ]
 }
+
 extension TypeNameRuleTests {
     static var allTests: [(String, (TypeNameRuleTests) -> () throws -> Void)] = [
         ("testTypeName", testTypeName),
@@ -369,18 +396,21 @@ extension TypeNameRuleTests {
         ("testTypeNameWithIgnoreStartWithLowercase", testTypeNameWithIgnoreStartWithLowercase)
     ]
 }
+
 extension UnusedOptionalBindingRuleTests {
     static var allTests: [(String, (UnusedOptionalBindingRuleTests) -> () throws -> Void)] = [
         ("testDefaultConfiguration", testDefaultConfiguration),
         ("testIgnoreOptionalTryEnabled", testIgnoreOptionalTryEnabled)
     ]
 }
+
 extension VerticalWhitespaceRuleTests {
     static var allTests: [(String, (VerticalWhitespaceRuleTests) -> () throws -> Void)] = [
         ("testVerticalWhitespaceWithDefaultConfiguration", testVerticalWhitespaceWithDefaultConfiguration),
         ("testAttributesWithMaxEmptyLines", testAttributesWithMaxEmptyLines)
     ]
 }
+
 extension YamlParserTests {
     static var allTests: [(String, (YamlParserTests) -> () throws -> Void)] = [
         ("testParseEmptyString", testParseEmptyString),
@@ -388,6 +418,7 @@ extension YamlParserTests {
         ("testParseInvalidStringThrows", testParseInvalidStringThrows)
     ]
 }
+
 extension YamlSwiftLintTests {
     static var allTests: [(String, (YamlSwiftLintTests) -> () throws -> Void)] = [
         ("testFlattenYaml", testFlattenYaml)
